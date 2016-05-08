@@ -10,7 +10,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   openweather:
-    github: [your-github-name]/openweather
+    github: lucasocon/openweather.cr
 ```
 
 
@@ -21,12 +21,17 @@ dependencies:
 require "openweather"
 ```
 
+### Get Weather
 
-TODO: Write usage instructions here
+```crystal
+Openweather::Client.new.get("london").sys.country
+# => GB
+```
 
-## Development
+Data available here:
+[http://openweathermap.org/current#current_JSON](http://openweathermap.org/current#current_JSON)
 
-TODO: Write development instructions here
+
 
 ## Contributing
 
@@ -38,4 +43,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Lucas Ocon - creator, maintainer
+- [lucasocon](https://github.com/lucasocon) Lucas Ocon - creator, maintainer
