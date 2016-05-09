@@ -1,6 +1,6 @@
-# openweather
+# Openweather.cr
 
-TODO: Write a description here
+A Crystal wrapper for the Openweather API
 
 ## Installation
 
